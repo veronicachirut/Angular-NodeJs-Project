@@ -1,0 +1,42 @@
+<br>
+<br>
+<br>
+<br>
+
+<div class="container">
+
+    <div class="row">
+        <div class="col-md-4 offset-md-4">
+        <div class="card text-center card  bg-default mb-3">
+  
+          <div class="card-header">
+            REGISTER
+          </div>
+  
+          <div class="card-body">
+            <div class="alert alert-danger" *ngIf="varValid">Your form is invalid</div>
+            <div class="form-group">
+                <input class="form-control" [(ngModel)]="user.name" placeholder="Name..." />
+            </div>
+
+            <div class="form-group">
+                <input class="form-control" [(ngModel)]="user.email" placeholder="Email..." [ngClass]="validateEmail(user.email) ? '' : 'is-invalid'"/>
+            </div>
+        
+            <div class="form-group">
+                <input class="form-control" [(ngModel)]="user.password" placeholder="Password..." type="password" />
+            </div>
+        
+            <div class="form-group">
+                <input class="form-control" [(ngModel)]="user.confirm_password" placeholder="Confirm Password..." type="password" />
+            </div>
+            <div class="alert alert-danger" *ngIf="varPassValid">Confirm password not valid</div>
+        </div>
+          
+          <div class="card-footer text-muted" id="registerBtn">
+            <button class="btn btn-secondary" (click)="register()">Register</button>
+          </div>
+        </div>
+    </div>
+    </div>
+  </div>

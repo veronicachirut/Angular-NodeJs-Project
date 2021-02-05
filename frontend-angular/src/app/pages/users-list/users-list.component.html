@@ -1,0 +1,13 @@
+<!-- <app-private-menu></app-private-menu> -->
+
+<h1>User list</h1>
+
+<table class="table">
+  <tr>
+    <td>Name</td>
+    <td></td>
+  </tr>
+  <tr *ngFor="let user of users">
+    <td>{{ user.email }} {{ user.name }}</td>
+  </tr>
+</table>

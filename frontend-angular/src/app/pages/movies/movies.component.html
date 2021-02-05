@@ -1,0 +1,19 @@
+<div class="container">
+  <div class="row hidden-md-up">
+    <div class="col-md-4" *ngFor="let movie of movies">
+      <br>
+      <div class="card">
+        <div class="card-block">
+          <div class="card-body text-center">
+            <img class="card-img-top" src={{movie.imgpath}} alt={{movie.title}} style="width:100%">
+            <div class="card-body">
+              <h4 class="card-title" style="font-family: Garamond, serif;">{{ movie.title }}</h4>
+              <button type="button" class="btn btn-sm btn-outline-secondary"
+                (click)="goToDetails(movie._id)">Details</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
