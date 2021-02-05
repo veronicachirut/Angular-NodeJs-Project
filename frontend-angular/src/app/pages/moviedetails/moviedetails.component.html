@@ -64,23 +64,6 @@
   </div>
 </div>
 
-<!-- <br>
-<br>
-<div class="container">
-  <hr class="my-4">
-  <h3 class="my-4">Related Movies</h3>
-
-  <div class="row hidden-md-up">
-    <div class="col-md-4" *ngFor="let movie of noCurrentMovieList">
-      <div class="card" style="width:70%">
-        <a href="moviedetails/{{movie._id}}">
-          <img class="img-fluid" src="{{ movie.imgpath }}" alt="{{ movie.title }}">
-        </a>
-      </div>
-    </div>
-  </div>
-</div> -->
-
 <br>
 <br>
 <hr class="my-4">
@@ -93,7 +76,7 @@
               <div class="carousel-item col-12 col-sm-6 col-md-4 col-lg-3 active">
                 <div class="card">
                   <div class="card-body">
-                    <h4 class="card-title">2021 Movies</h4>
+                    <h4 class="card-title">{{ currentMovie.year }} Movies</h4>
                   </div>
                 </div>
               </div>

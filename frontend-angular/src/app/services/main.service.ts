@@ -73,11 +73,11 @@ export class MainService {
     this.router.navigate(["/login"]);
   }
 
-  getAllUsers() {
-    return this.http
-      .get(this.url + "users/userslist", this.httpOptionsPrivate)
-      .pipe(catchError(this.handleError("getAllUsers")));
-  }
+  // getAllUsers() {
+  //   return this.http
+  //     .get(this.url + "users/userslist", this.httpOptionsPrivate)
+  //     .pipe(catchError(this.handleError("getAllUsers")));
+  // }
 
   getAllMovies() {
     return this.http

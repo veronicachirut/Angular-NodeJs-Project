@@ -20,7 +20,7 @@ export class LoginComponent implements OnInit {
     if (this.validateEmail(this.user.email)) {
       this.mainService.login(this.user).subscribe((response: any) => {
         if (response && response.token) {
-          this.router.navigate(["/movies"]);
+          this.router.navigate(["/"]);
         } else {
           this.error = "Invalid email or password";
         }
